@@ -1,7 +1,36 @@
-body {
-    padding-top: 80px;
+:root {
+    --color-principal: #AABF16;
+    --color-fondo: #FFFDF9;
+    --color-texto: #2B2B2B;
 }
 
-.parrafo{
+
+body {
+    padding-top: 80px;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #FFFDF9;
+    color: #2B2B2B;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.parrafo {
     max-width: 600px;
+    margin-bottom: 1rem;
 }
