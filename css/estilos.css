@@ -1,0 +1,33 @@
+.contacta_bg {
+    position: relative;
+    background-image: url(../img/fondo-contacta2.png);
+    background-size: cover;
+    background-position: center;
+    color: #FFFDF9;
+    display: flex;
+    align-items: center;
+}
+
+.contacta_bg .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.contacta_bg .container {
+    position: relative;
+    z-index: 2;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 100%;
+}
+
+.mapa iframe {
+    height: 200px;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
