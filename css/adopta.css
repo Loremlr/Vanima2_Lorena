@@ -1,0 +1,131 @@
+/*ANIMACION HUELLA*/
+button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #c8d169;
+    border-radius: 20px;
+    border: none;
+    height: 36px;
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+    justify-content: space-between;
+    font-size: 16px;
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+}
+
+.huellas-icon {
+    height: 18px;
+    color: #fffdf9;
+    fill: #fffdf9;
+}
+
+@-webkit-keyframes shake-bl {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    10% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes shake-bl {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    10% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+}
+
+button:hover .huellas-icon {
+    animation: shake-bl 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+button:hover {
+    background-color: #aabf16;
+}
+
+a {
+    color: #fffdf9;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fffdf9;
+}
+
+/*ANIMACION ZOOM FOTO*/
+
+.animal-img{
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+.animal-img:has(:hover, :focus) {
+    --img-scale: 52;
+}
