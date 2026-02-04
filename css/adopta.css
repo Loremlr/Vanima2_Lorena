@@ -1,3 +1,16 @@
+/*ESTILOS DE LAS CARD/TARJETAS*/
+.card h2 {
+    color: #aabf16;
+}
+.card{
+    width: 35rem;
+    margin-left: 2rem;
+}
+
+.lucide {
+    stroke-width: 3.2;
+}
+
 /*ANIMACION HUELLA*/
 button {
     display: inline-flex;
@@ -115,17 +128,30 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #fffdf9;
 }
 
 /*ANIMACION ZOOM FOTO*/
 
-.animal-img{
-    transform: scale(var(--img-scale));
-    transition: transform 0.4s ease-in-out;
+.animal-img-wrapper{
+    height: 30rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.animal-img {
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+.adopta-card:hover .animal-img{
+    transform: scale(1.1);
 }
 
-.animal-img:has(:hover, :focus) {
-    --img-scale: 52;
+/*OTROS*/
+.adopta-card{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
 }
+
