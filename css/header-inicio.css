@@ -1,0 +1,72 @@
+/*CSS HEADER*/
+
+.header-home {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-image: url(/img/cabecera.png);
+    background-size: cover;
+    overflow: hidden;
+
+    animation: encoger;
+    animation-duration: 1s;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: 0% 400px;
+    transition: all 0.5s ease;
+}
+
+/* encoger header */
+@keyframes encoger {
+    from {
+        height: 330px;
+
+    }
+
+    to {
+        height: 80px;
+        background-image: none;
+        background-color: #AABF16;
+    }
+}
+
+/*quitar gradient*/
+@keyframes quitarGradient {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.header-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* ocupa todo el header */
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4),
+            /* más oscuro arriba */
+            rgba(0, 0, 0, 0.1)
+            /* más claro abajo */
+        );
+    animation: quitarGradient;
+    animation-duration: 1s;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: 0% 400px;
+    /* no bloquea clics */
+}
+
+
+body {
+    padding-top: 330px;
+}
+
+.navbar{
+    background-color: transparent;
+}
