@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Protectora de animales en Valencia">
+    <meta name="keywords" content="perro, animales, adopcion, adoptar perro, pequeño, grande, mediano, Valencia">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/adopta.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="icon" type="img/png" href="img/fav-icon-vanima.svg">
+    <title>Vanima - Formulario adopción</title>
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+            <div class="container">
+
+                <!-- LOGO -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_completo_blanco.png" alt="logo_completo_blanco"
+                        class="logo-desktop d-none d-lg-block">
+                    <img src="img/logo_reducido_blanco.png" alt="Logo_reducido_blanco" class="logo-mobile d-lg-none">
+                </a>
+
+                <!-- BOTÓN HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- MENÚ -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto text-center text-lg-end">
+                        <li class="nav-item"><a class="nav-link" href="adopta.html">Adopta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/colabora.html">Colabora</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contacta.html">Contacta</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+
+        <form id="formAdopcion">
+            <div class="row g-4">
+
+                <!--DATOS PERSONALES-->
+                <div id="f1" class="col-12 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <legend>
+                            <h3 class="mb-4">Datos personales del adoptante</h3>
+                        </legend>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre: </label>
+                            <input class="form-control" required placeholder="Introduce tu nombre" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Apellidos: </label>
+                            <input class="form-control" required placeholder="Introducir apellidos" name="apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico: </label>
+                            <input class="form-control" required type="email" placeholder="introducecorreo@gmail.com" name="email" >
+                        </div>
+                        <div class="input-container">
+                            <label class="form-label">Teléfono: </label>
+                            <input class="form-control" required type="tel" maxlength="9" placeholder="+34" name="telefono" >
+                        </div>
+                        <div class="input-container">
+                            <label class="form-label">DNI: </label>
+                            <input class="form-control" required maxlength="9" placeholder="DNI + Letra" name="dni">
+                        </div>
+                    </div>
+                </div>
+
+                <!--INFORMACION DEL HOGAR-->
+                <div id="f2" class="col-12 col-lg-4">
+                    <div class="card p-4 h-100">
+                    <legend>
+                        <h3 class="mb-4">Información del hogar</h3>
+                    </legend>
+                        <div class="mb-3">
+                            <label class="form-label d-block">Tipo de vivienda</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="piso" name="tipo_domicilio_" value="Piso">
+                                <label>Piso</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="casa" name="tipo_domicilio_" value="Casa">
+                                <label>Casa</label>
+                            </div>
+                        </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label d-block">Su hogar es</label>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" id="propia" name="domicilio_propio" value="sí (propio)">
+                                <label class="form-check-label">Propiedad propia</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="alquiler" name="domicilio_propio" value="no (alquiler)">
+                                <label class="form-check-label">Alquiler</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--DATOS DE INTERES-->
+                <div id="f3" class="col-12 col-lg-4">
+                    <div class="card p-4 h-100">
+                    <legend>
+                        <h3 class="mb-4">Datos de interés</h3>
+                    </legend>
+
+                    <div class="mb-3">
+                        <label class="form-label d-block">¿Tienes actualmente alguna mascota?</label>
+
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" id="mascotasSi" name="otras_mascotas" value="si">
+                                <label class="form-check-label" for="mascotasSi">Sí</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="mascotasNo" name="otras_mascotas" value="no">
+                            <label class="form-check-label" for="mascotasNo">No</label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="mb-3 d-none" id="cantidadMascotasContainer">
+                        <label class="form-label">¿Cuántas?</label>
+                        <input class="form-control" placeholder="Número de mascotas" name="cantidad_mascotas" type="number" min="1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Observaciones:</label>
+                        <textarea class="form-control" rows="3" name="observaciones" placeholder="Escribe aquí"></textarea>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <button mailto:lorenalopezromera3@gmail.com="" type="submit" id="enviar">Enviar</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="bg-body-tertiary py-4">
+        <div class="container">
+
+            <div class="row align-items-center gy-3">
+
+                <!-- LOGO -->
+                <div class="col-lg-4 text-center text-lg-start">
+                    <a href="#">
+                        <img src="img/logo_completo_blanco.png" alt="Vanima" class="footer-logo">
+                    </a>
+                </div>
+
+                <!-- ENLACES LEGALES -->
+                <div class="col-lg-8 text-center text-lg-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none">Aviso legal</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none">Política de privacidad</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
