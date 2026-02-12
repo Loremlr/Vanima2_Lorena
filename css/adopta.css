@@ -206,6 +206,10 @@ a:hover {
     color: #9dd7ec;
 }
 
+.adopta-card-proceso:hover .animal-img, .adopta-card-acogida:hover .animal-img, .adopta-card-urgente:hover .animal-img{
+    transform: scale(1.1);
+}
+
 /*ADOPCIÓN URGENTE*/
 .adopta-card-urgente{
     border-radius: 10px;

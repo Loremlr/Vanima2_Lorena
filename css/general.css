@@ -44,11 +44,14 @@ h2 {
 .navbar {
     background-color: #AABF16;
     color: #FFFDF9;
+    height: 80px;
 }
 
 #pagina-actual {
     font-weight: bold;
     border-bottom: 2px solid #fffdf9;
+    color: #fffdf9;
+    opacity: 1;
 }
 
 .navbar img {

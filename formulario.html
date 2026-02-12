@@ -7,6 +7,7 @@
     <meta name="keywords" content="perro, animales, adopcion, adoptar perro, pequeño, grande, mediano, Valencia">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
+    <link href="css/formulario.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +56,7 @@
     <main class="container">
 
         <form id="formAdopcion" action="https://formspree.io/f/xqedpzoj" method="POST">
-            <div class="row g-4">
+            <div class="row">
 
                 <!--DATOS PERSONALES-->
                 <div id="f1" class="col-12 col-lg-4">
@@ -75,11 +76,11 @@
                             <label for="mail" class="form-label">Correo electrónico: </label>
                             <input id="mail" class="form-control" required type="email" placeholder="introducecorreo@gmail.com" name="email" >
                         </div>
-                        <div class="input-container">
+                        <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono: </label>
                             <input id="telefono" class="form-control" required type="tel" maxlength="9" placeholder="+34" name="telefono" >
                         </div>
-                        <div class="input-container">
+                        <div class="mb-3">
                             <label for="dni" class="form-label">DNI: </label>
                             <input id="dni" class="form-control" required maxlength="9" placeholder="DNI + Letra" name="dni">
                         </div>
@@ -147,7 +148,7 @@
 
                     <div class="mb-3">
                         <label class="form-label">Observaciones:</label>
-                        <textarea class="form-control" rows="3" name="observaciones" placeholder="Escribe aquí"></textarea>
+                        <textarea id="observaciones" class="form-control" rows="3" name="observaciones" placeholder="Escribe aquí"></textarea>
                     </div>
                     </div>
                 </div>
@@ -168,7 +169,7 @@
 
                 <!-- LOGO -->
                 <div class="col-lg-4 text-center text-lg-start">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="img/logo_completo_blanco.png" alt="Vanima" class="footer-logo">
                     </a>
                 </div>
