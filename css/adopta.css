@@ -148,10 +148,82 @@ a:hover {
     transform: scale(1.1);
 }
 
-/*OTROS*/
+/*LEYENDA ANIMALES*/
+.leyenda-animales{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.disponible{
+    background-color: #aabf16;
+    color: #fffdf9;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.adoptado{
+    background-color: #9dd7ec;
+    color: #fffdf9;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.acogida{
+    background-color: #e8aa61;
+    color: #fffdf9;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.urgente{
+    background-color: #e45f51;
+    color: #fffdf9;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/*CARDS ADOPTAR GENERICO*/
 .adopta-card{
     border-radius: 10px;
     overflow: hidden;
     padding: 0;
+    box-shadow: 0 0 12px rgba(170, 191, 22, 0.35);
 }
 
+
+/*EN PROCESO DE ADOPCIÓN*/
+.adopta-card-proceso{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 0 12px rgba(157, 215, 236, 0.90);
+}
+.adopta-card-proceso h2{
+    color: #9dd7ec;
+}
+
+/*ADOPCIÓN URGENTE*/
+.adopta-card-urgente{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 0 12px rgba(228, 95, 91, 0.90);
+}
+.adopta-card-urgente h2{
+    color: #e45f51;
+}
+
+/*EN CASA DE ACOGIDA*/
+.adopta-card-acogida{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 0 12px rgba(232, 170, 97, 0.90);
+}
+.adopta-card-acogida h2{
+    color: #e8aa61;
+}
