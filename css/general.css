@@ -71,3 +71,19 @@ footer a:hover {
 footer img {
     height: 32px;
 }
+
+button {
+    color: #FFFDF9;
+    padding: 10px 15px;
+    align-items: center;
+    text-decoration: none;
+    background-color: #c8d169;
+    border-radius: 20px;
+    border: none;
+    gap: 10px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #AABF16;
+}

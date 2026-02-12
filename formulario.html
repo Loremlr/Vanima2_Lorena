@@ -7,7 +7,6 @@
     <meta name="keywords" content="perro, animales, adopcion, adoptar perro, pequeño, grande, mediano, Valencia">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
-    <link href="css/adopta.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +54,7 @@
     <!-- CONTENIDO -->
     <main class="container">
 
-        <form id="formAdopcion">
+        <form id="formAdopcion" action="https://formspree.io/f/xqedpzoj" method="POST">
             <div class="row g-4">
 
                 <!--DATOS PERSONALES-->
@@ -65,24 +64,24 @@
                             <h3 class="mb-4">Datos personales del adoptante</h3>
                         </legend>
                         <div class="mb-3">
-                            <label class="form-label">Nombre: </label>
-                            <input class="form-control" required placeholder="Introduce tu nombre" name="nombre">
+                            <label for="nombre" class="form-label">Nombre: </label>
+                            <input id="nombre" class="form-control" required placeholder="Introduce tu nombre" name="nombre">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Apellidos: </label>
-                            <input class="form-control" required placeholder="Introducir apellidos" name="apellidos">
+                            <label for="apellidos" class="form-label">Apellidos: </label>
+                            <input id="apellidos" class="form-control" required placeholder="Introducir apellidos" name="apellidos">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Correo electrónico: </label>
-                            <input class="form-control" required type="email" placeholder="introducecorreo@gmail.com" name="email" >
+                            <label for="mail" class="form-label">Correo electrónico: </label>
+                            <input id="mail" class="form-control" required type="email" placeholder="introducecorreo@gmail.com" name="email" >
                         </div>
                         <div class="input-container">
-                            <label class="form-label">Teléfono: </label>
-                            <input class="form-control" required type="tel" maxlength="9" placeholder="+34" name="telefono" >
+                            <label for="telefono" class="form-label">Teléfono: </label>
+                            <input id="telefono" class="form-control" required type="tel" maxlength="9" placeholder="+34" name="telefono" >
                         </div>
                         <div class="input-container">
-                            <label class="form-label">DNI: </label>
-                            <input class="form-control" required maxlength="9" placeholder="DNI + Letra" name="dni">
+                            <label for="dni" class="form-label">DNI: </label>
+                            <input id="dni" class="form-control" required maxlength="9" placeholder="DNI + Letra" name="dni">
                         </div>
                     </div>
                 </div>
@@ -93,30 +92,30 @@
                     <legend>
                         <h3 class="mb-4">Información del hogar</h3>
                     </legend>
-                        <div class="mb-3">
-                            <label class="form-label d-block">Tipo de vivienda</label>
+                        <fieldset class="mb-3">
+                            <legend class="form-label d-block">Tipo de vivienda</legend>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" id="piso" name="tipo_domicilio_" value="Piso">
-                                <label>Piso</label>
+                                <label for="piso">Piso</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" id="casa" name="tipo_domicilio_" value="Casa">
-                                <label>Casa</label>
+                                <label for="casa">Casa</label>
                             </div>
-                        </div>
+                        </fieldset>
                     
-                    <div class="mb-3">
-                        <label class="form-label d-block">Su hogar es</label>
+                    <fieldset class="mb-3">
+                        <legend class="form-label d-block">Su hogar es</legend>
                         <div class="form-check">
                                 <input class="form-check-input" type="radio" id="propia" name="domicilio_propio" value="sí (propio)">
-                                <label class="form-check-label">Propiedad propia</label>
+                                <label for="propia" class="form-check-label">Propiedad propia</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" id="alquiler" name="domicilio_propio" value="no (alquiler)">
-                                <label class="form-check-label">Alquiler</label>
+                                <label for="alquiler" class="form-check-label">Alquiler</label>
                             </div>
                         </div>
-                    </div>
+                    </fieldset>
                 </div>
 
                 <!--DATOS DE INTERES-->
@@ -126,8 +125,8 @@
                         <h3 class="mb-4">Datos de interés</h3>
                     </legend>
 
-                    <div class="mb-3">
-                        <label class="form-label d-block">¿Tienes actualmente alguna mascota?</label>
+                    <fieldset class="mb-3">
+                        <legend class="form-label d-block">¿Tienes actualmente alguna mascota?</legend>
 
                         <div class="form-check">
                                 <input class="form-check-input" type="radio" id="mascotasSi" name="otras_mascotas" value="si">
@@ -138,7 +137,7 @@
                             <input class="form-check-input" type="radio" id="mascotasNo" name="otras_mascotas" value="no">
                             <label class="form-check-label" for="mascotasNo">No</label>
                         </div>
-                    </div>
+                    </fieldset>
                     
 
                     <div class="mb-3 d-none" id="cantidadMascotasContainer">
@@ -154,7 +153,7 @@
                 </div>
 
                 <div class="col-12 text-center mt-4">
-                    <button mailto:lorenalopezromera3@gmail.com="" type="submit" id="enviar">Enviar</button>
+                    <button type="submit">Enviar</button>
                 </div>
             </div>
         </form>
@@ -196,6 +195,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>lucide.createIcons();</script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/formulario.js"></script>
 </body>
 
