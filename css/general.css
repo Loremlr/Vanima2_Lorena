@@ -92,3 +92,21 @@ button {
 button:hover{
     background-color: #AABF16;
 }
+
+/*BOTON ARRIBA*/
+#arriba{
+    background-color: #c8d169;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    display: none;
+    z-index: 9999;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+#arriba:hover{
+    background-color: #AABF16;
+}
