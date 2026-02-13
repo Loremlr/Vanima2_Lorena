@@ -237,7 +237,7 @@ a:hover {
 
 @media (max-width:992px){
     .animal-img-wrapper{
-    height: 25rem;
+    height: 18rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
