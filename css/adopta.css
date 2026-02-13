@@ -1,3 +1,5 @@
+
+
 /*ESTILOS DE LAS CARD/TARJETAS*/
 .card h2 {
     color: #aabf16;
@@ -9,7 +11,7 @@
 }
 
 /*ANIMACION HUELLA*/
-button {
+.card-body button {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
