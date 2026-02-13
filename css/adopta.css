@@ -17,8 +17,7 @@ button {
     border-radius: 20px;
     border: none;
     height: 36px;
-    display: flex;
-    gap: 10px;
+    width: 120px;
     padding: 16px;
     justify-content: space-between;
     font-size: 16px;
@@ -184,9 +183,9 @@ a:hover {
 }
 
 /*CARDS ADOPTAR GENERICO*/
-.card-body{
+/*.card-body{
     height: 355px;
-}
+}*/
 
 .adopta-card{
     border-radius: 10px;
@@ -235,6 +234,7 @@ a:hover {
 
 
 /*VERSION MOVIL*/
+
 @media (max-width:992px){
     .animal-img-wrapper{
     height: 25rem;
@@ -242,9 +242,39 @@ a:hover {
     display: flex;
     justify-content: center;
 }
-
+/*
     .card-body{
-    height: 280px;
+    height: 300px;
+}
+*/
 }
 
+.adopta-card,
+.adopta-card-proceso,
+.adopta-card-urgente,
+.adopta-card-acogida {
+    display: flex;
+    flex-direction: column;
+}
+
+.adopta-card .card-body,
+.adopta-card-proceso .card-body,
+.adopta-card-urgente .card-body,
+.adopta-card-acogida .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body button {
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.card > .row {
+    flex: 1;
+}
+
+.card > .row > div:last-child {
+    display: flex;
 }
